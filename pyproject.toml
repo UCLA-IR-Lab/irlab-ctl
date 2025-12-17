@@ -8,6 +8,7 @@ dependencies = [
     "aiohttp>=3.13.2",
     "influxdb-client>=1.49.0",
     "pysnmp>=7.1.22",
+    "slack-sdk>=3.39.0",
 ]
 
 [project.scripts]
