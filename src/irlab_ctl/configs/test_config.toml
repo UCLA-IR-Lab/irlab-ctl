@@ -22,7 +22,7 @@ ls224_address = "192.168.0.4"
 inficon_address = "192.168.0.5"
 
 [devices.ow]
-sensor_count = 10 
+sensor_count = 10
 
 [logging.csv]
 directory = "/test_dir"
