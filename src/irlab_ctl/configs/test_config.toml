@@ -1,0 +1,39 @@
+[operation]
+mode = "logging"
+test_name = "test_irlab_ctl"
+
+[enabled.devices]
+lakeshore = true
+onewire = true
+ups = true
+pdu = true
+inficon = true
+
+[enabled.logging]
+influxdb = true
+slack = true
+csv = true
+
+[devices]
+ow_address = "192.168.0.1"
+pdu_address = "192.168.0.2"
+ups_address = "192.168.0.3"
+ls224_address = "192.168.0.4"
+inficon_address = "192.168.0.5"
+
+[devices.ow]
+sensor_count = 10
+
+[logging.csv]
+directory = "/test_dir"
+filename = "test_log"
+
+[logging.influxdb]
+url = "http://127.0.0.1:8086"
+token = ""
+org = "TEST-ORG"
+bucket = "TEST_BUCKET"
+
+[logging.slack]
+channel = "logging"
+token = ""
